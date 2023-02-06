@@ -1,0 +1,35 @@
+<p>
+	canciones works! eventos comp
+</p>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class='h4'>NOMBRE EVENTO</th>
+      <th class='h4'>LUGAR</th>
+      <th class='h4'>DIRECCION</th>
+      <th class='h4'>MODALIDAD DEL EVENTO</th>
+      <th class='h4'>CATEGORIA DEL EVENTO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor= "let c of eventos">
+      <td>
+        <dd>{{c.Nomevento}}</dd>
+      </td>
+      <td>
+        <dd>{{c.Lugar}}</dd>
+      </td>
+      <td>
+        <dd>{{c.Direccion}}</dd>
+      </td>
+      <td>
+        <dd>{{c.TipoModalidad.llave}}</dd>
+      </td>
+      <td>
+        <dd>{{c.TipoCategoria.llave}}</dd>
+      </td>
+    </tr>
+  </tbody>
+</table>
